@@ -28,7 +28,7 @@ interface Response {
   };
 }
 
-interface PriceUpdate{
+interface PriceUpdate {
   timestamp: Date;
   USD: number;
   GBP: number;
@@ -41,7 +41,6 @@ interface PriceUpdate{
   styleUrls: ['./bitcoin.component.css']
 })
 export class BitcoinComponent implements OnInit {
-
   currentPrice: Response;
   lastUpdate: Date;
 
@@ -66,5 +65,4 @@ export class BitcoinComponent implements OnInit {
       });
     });
   }
-
 }
