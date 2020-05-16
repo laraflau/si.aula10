@@ -8,7 +8,7 @@ interface Response {
   disclaimer: string;
   bpi: {
     // Colaboração vaiosíssima do colega LUCAS VIANA DOS SANTOS
-    [key in string]: {
+    [key in 'USD' | 'GBP' | 'EUR']: {
       symbol: string;
       description; string;
       rate_float: number;
