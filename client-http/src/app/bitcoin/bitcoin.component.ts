@@ -7,19 +7,8 @@ interface Response {
   };
   disclaimer: string;
   bpi: {
-    USD: {
-      symbol: string;
-      description; string;
-      rate_float: number;
-      rate: string;
-    };
-    GBP: {
-      symbol: string;
-      description; string;
-      rate_float: number;
-      rate: string;
-    };
-    EUR: {
+    // Colaboração vaiosíssima do colega LUCAS VIANA DOS SANTOS
+    [key in string]: {
       symbol: string;
       description; string;
       rate_float: number;
